@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  r-studio:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 28787:8787
+    volumes:
+      - .:/home/rstudio/MeSHSim
+    environment:
+      - R_MAX_VSIZE=64Gb
+      - ROOT=True
+      - USER=admin
+      - PASSWORD=admin
