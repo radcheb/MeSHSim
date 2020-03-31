@@ -82,12 +82,12 @@ Load MeSHSim pacakge in R console
 
 * Download latest MeSH file
 ```bash
-wget ftp://nlmpubs.nlm.nih.gov/online/mesh/2019/meshtrees/mtrees2019.bin
+wget ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/meshtrees/mtrees2020.bin
 ```
 
 * Update MeSH DB
 ```R
 source("./R/mesh_tree_utils.R")
 
-update_db("./data/mesh.rda", "./mtrees2019.bin")
+update_db("./data/mesh.rda", "./mtrees2020.bin")
 ``` 
